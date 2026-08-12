@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Favour Restaurant | Taste of Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="announcement">📍 56 Kawangware, Nairobi • 🚚 Quick local delivery • 🧼 Hygienic home-style meals</div>
+<header class="navbar">
+<a href="#home" class="brand">
+    <img src="images/favour-logo.png" alt="Favour Restaurant Logo">
+</a>
+<nav><a href="#home">Home</a><a href="#menu">Menu</a><a href="#how">How to Order</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<button class="cart-btn" onclick="openCart()">🛒 Cart <span id="cartCount">0</span></button>
+</header>
+
+<main>
+<section id="home" class="hero">
+<div class="hero-copy">
+<p class="eyebrow">WELCOME TO FAVOUR RESTAURANT</p>
+<h1>Experience the <em>Taste of Home!</em></h1>
+<p class="hero-sub">Affordable, delicious & hygienic meals prepared with care in the heart of 56 Kawangware, Nairobi.</p>
+<div class="hero-actions">
+
+<a class="btn whatsapp" href="https://wa.me/254743879484" target="_blank">💬 Order on WhatsApp</a>
+<a class="btn outline" href="#menu">View Today's Menu</a>
+</div>
+<div class="hero-points"><span>✓ Affordable prices</span><span>✓ Clean preparation</span><span>✓ Quick local delivery</span></div>
+</div>
+<div class="hero-visual">
+<img src="images/favor-matumbo.jpeg" alt="Favour Restaurant Matumbo">
+<div class="hero-card"><b>FAVOUR SPECIAL</b><strong>Made fresh. Served warm.</strong><span>From KSh 50</span></div>
+</div>
+</section>
+
+<section class="info-bar">
+<div>🍽️ <span><b>Home-style meals</b><small>Simple, tasty & filling</small></span></div>
+<div>🧼 <span><b>Hygiene first</b><small>Clean food preparation</small></span></div>
+<div>🛵 <span><b>Local delivery</b><small>Fast around Kawangware</small></span></div>
+<div>💚 <span><b>Community focused</b><small>Good food, fair prices</small></span></div>
+</section>
+
+<section id="menu" class="section">
+<div class="section-head">
+<div><p class="eyebrow">TODAY'S MENU</p><h2>Pick your favourite.</h2><p class="muted">Order online, by WhatsApp, or call 0743879484.</p></div>
+<div class="search">⌕ <input id="search" type="search" placeholder="Search menu..." oninput="renderMenu()"></div>
+</div>
+<div class="tabs"><button id="breakfastTab" class="tab active" onclick="setCategory('Breakfast')">🍳 Breakfast</button><button id="lunchTab" class="tab" onclick="setCategory('Lunch')">🍛 Lunch</button></div>
+<div id="menuGrid" class="menu-grid"></div>
+</section>
+
+<section id="how" class="section how-section">
+<div class="center"><p class="eyebrow">SIMPLE ORDERING</p><h2>From our kitchen to your door.</h2></div>
+<div class="steps">
+<div class="step"><b>1</b><div><h3>Pick your meal</h3><p>Choose from our affordable breakfast or lunch menu.</p></div></div>
+<div class="step"><b>2</b><div><h3>Order via WhatsApp / Call</h3><p>Use the online cart or contact Favour Restaurant directly.</p></div></div>
+<div class="step"><b>3</b><div><h3>Pay & receive delivery</h3><p>Pay via M-Pesa and get your order delivered locally.</p></div></div>
+</div>
+</section>
+
+<section class="payment">
+<div><p class="eyebrow light">EASY DIGITAL PAYMENT</p><h2>Pay with M-Pesa.</h2><p>After placing your order, use the restaurant's official Buy Goods Till or Paybill.</p></div>
+<div class="payment-box"><span>M-PESA</span><strong>Send Money: +254743879484</strong><small></small></div>
+</section>
+
+<section id="about" class="section about">
+<div class="about-image"><img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1000&q=85" alt="Restaurant dining"></div>
+<div><p class="eyebrow">ABOUT FAVOUR</p><h2>A little taste of home in Kawangware.</h2><p>Favour Restaurant brings affordable Kenyan home-style meals to the local community. We focus on delicious food, clean preparation, friendly service and convenient local ordering.</p>
+<div class="checks"><span>✓ Affordable everyday meals</span><span>✓ Hygienic preparation</span><span>✓ Quick local delivery</span><span>✓ Friendly service</span></div></div>
+</section>
+
+<section class="cta"><div><p class="eyebrow light">HUNGRY?</p><h2>Your next meal is just a WhatsApp away.</h2></div><a class="btn light-btn" href="https://wa.me/254743879484" target="_blank">💬 WhatsApp 0743879484</a></section>
+
+<section id="contact" class="section contact">
+<div class="center"><p class="eyebrow">CONTACT FAVOUR RESTAURANT</p><h2>Come hungry. Leave happy.</h2></div>
+<div class="contact-grid">
+<a href="https://www.google.com/maps/search/?api=1&query=56+Kawangware+Nairobi+Kenya" target="_blank"><b>📍 Location</b><span>56 Kawangware, Nairobi, Kenya</span></a>
+<a href="tel:0743879484"><b>📞 Phone / WhatsApp</b><span>0743879484</span></a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=munikahterry20@gmail.com&su=Favour%20Restaurant%20Order%20Inquiry" target="_blank">
+  <b>✉️ Email</b>
+  <span>munikahterry20@gmail.com</span>
+</a>
+<a href="https://www.tiktok.com/@FavourRestaurantKE" target="blank"><b>♪ TikTok</b><span>@FavourRestaurantKE</span></a>
+<a href="https://www.instagram.com/FavourRestaurantKE/" target="_blank"><b>◎ Instagram</b><span>@FavourRestaurantKE</span></a>
+<div><b>🕐 Opening Hours</b>
+  <span>Monday – Sunday: 7:00 AM – 9:00 PM</span></div>
+</div>
+</section>
+</main>
+
+
+<footer>
+    <a href="#home" class="brand footer-logo">
+        <img src="images/favour-logo.png" alt="Favour Restaurant Logo">
+    </a>
+    <p>© <span id="year"></span> Favour Restaurant • 56 Kawangware, Nairobi</p>
+</footer>
+<div id="cartOverlay" class="overlay hidden" onclick="closeCart(event)">
+<aside class="cart" onclick="event.stopPropagation()"><div class="cart-head"><div><p class="eyebrow">YOUR ORDER</p><h2>Your basket</h2></div><button class="x" onclick="closeCart()">×</button></div>
+<div id="cartItems"></div><div class="total"><span>Total</span><strong id="cartTotal">KSh 0</strong></div>
+<button class="btn primary full" onclick="openCheckout()">Proceed to checkout</button>
+<a class="btn outline full" href="https://wa.me/254743879484" target="_blank">Order on WhatsApp</a>
+</aside></div>
+
+<div id="checkoutOverlay" class="overlay hidden"><div class="checkout">
+<button class="x close-x" onclick="closeCheckout()">×</button><p class="eyebrow">CHECKOUT</p><h2>Complete your order.</h2>
+<form onsubmit="submitOrder(event)">
+<div class="form-grid"><label>Full name<input id="customerName" required placeholder="Your name"></label><label>Phone number<input id="customerPhone" required type="tel" placeholder="07xx xxx xxx"></label></div>
+<div class="form-grid"><label>Order type<select id="orderType"><option>Delivery</option><option>Pickup</option><option>Dine-in</option></select></label><label>Payment<select id="payment"><option>M-Pesa on confirmation</option><option>Cash on delivery/pickup</option></select></label></div>
+<label>Location / table / pickup details<textarea id="address" required rows="3" placeholder="Estate, building, landmark, table number, or pickup instructions"></textarea></label>
+<label>Extra notes<textarea id="notes" rows="2" placeholder="Special request?"></textarea></label>
+<div class="total"><span>Order total</span><strong id="checkoutTotal">KSh 0</strong></div>
+<button id="submitBtn" class="btn primary full" type="submit">Place order</button><p id="status" class="status"></p>
+</form></div></div>
+
+<div id="successOverlay" class="overlay hidden"><div class="success"><div class="success-icon">✓</div><p class="eyebrow">ORDER RECEIVED</p><h2>Thank you!</h2><p id="successText"></p><div id="orderCode" class="order-code"></div><button class="btn whatsapp full" onclick="sendWhatsApp()">Send order to WhatsApp</button><button class="btn outline full" onclick="closeSuccess()">Continue shopping</button></div></div>
+<script src="script.js"></script>
+</body>
+</html>
