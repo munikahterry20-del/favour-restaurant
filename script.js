@@ -984,7 +984,7 @@ ${lastOrder.payment}
 Notes:
 ${lastOrder.notes}`;
 
-const whatsappNumber = "254743879484";
+
   const url =
     "https://wa.me/" +
     CONFIG.WHATSAPP_NUMBER +
