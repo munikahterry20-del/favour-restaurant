@@ -1,5 +1,5 @@
 const CONFIG = {
-  ORDER_ENDPOINT: "https://script.google.com/macros/s/AKfycbx95DPQCFAyJBCO8fB2fpAb1Zox05KpKRrEgh5vpa4qSuYjYdwxxgoDjpwTbF1r0IJK/exec",
+  ORDER_ENDPOINT: "https://script.google.com/macros/s/AKfycbzqq6UXbNUcBeUuznJ33zsYwuwwabHLghnDY8FqmjxtTRY5oYc3OI7G_d0N5uUSZdc1pg/exec",
   WHATSAPP_NUMBER: "254743879484"
 };
 
